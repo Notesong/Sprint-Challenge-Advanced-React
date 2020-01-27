@@ -2,10 +2,30 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
+.header {
+  background-color: #303236;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  padding-bottom: 2rem;
+}
+
+.App-header h3 {
+  margin: 0.25rem;
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player-card {
+  margin: 2rem;
+  background-color: rgb(59, 81, 102);
+  padding: 1rem;
+  min-width: 300px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.61);
 }
