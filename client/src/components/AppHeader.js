@@ -11,7 +11,7 @@ const AppHeader = () => {
     };
 
     return(
-        <div className="header">
+        <div className="header" data-testid="header">
             <div>
                 <h1>Women's World Cup</h1>
                 <h3>Players ranked by search interest</h3>
@@ -19,7 +19,7 @@ const AppHeader = () => {
             </div>
             <div className="dark-mode__toggle">
                 <p className="dark-mode-text">Dark Mode: {darkMode ? 'On' : 'Off'}</p>
-                <div
+                <button
                     onClick={toggleMode}
                     className={darkMode ? 'toggle toggled' : 'toggle'}
                 />
