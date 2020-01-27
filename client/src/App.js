@@ -14,7 +14,6 @@ class App extends React.Component {
       .then(res => res.json())
       .then(worldCupPlayerData => {
         this.setState({...this.state, playerData: worldCupPlayerData})
-        console.log(this.state.playerData);
       })
       .catch(err => console.log("Error on fetch: ", err));
   }
