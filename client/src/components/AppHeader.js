@@ -5,6 +5,7 @@ const AppHeader = () => {
 
     const [darkMode, setDarkMode] = useDarkMode('DarkMode', false);
 
+    // toggle dark mode
     const toggleMode = e => {
         e.preventDefault();
         setDarkMode(!darkMode);
@@ -18,7 +19,9 @@ const AppHeader = () => {
                 <h3>Google Trends, June-July 2019</h3>
             </div>
             <div className="dark-mode__toggle">
+                {/* will change text based on mode */}
                 <p className="dark-mode-text">Dark Mode: {darkMode ? 'On' : 'Off'}</p>
+                {/* toggle button to change dark mode on or off. Uses toggleMode() */}
                 <button
                     onClick={toggleMode}
                     className={darkMode ? 'toggle toggled' : 'toggle'}

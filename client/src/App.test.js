@@ -10,7 +10,7 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-test('display header', () => {
+test('displaying header', () => {
   // ARRANGE
   const { getByTestId } = render(<App />);
 
